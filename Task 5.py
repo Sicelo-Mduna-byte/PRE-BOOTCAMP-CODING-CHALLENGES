@@ -1,16 +1,16 @@
 from math import sqrt
 
 
-def area_of_triangle(a,b,c):
+def area_of_triangle(side1,side2,side3):
     '''
     Calculate the area of a triangle given only 3 sides, a,b,c
     '''
-    S = (a + b + c) / 2
-    A = (((S - a) * (S - b) * (S - c)) * S)
-    C = sqrt(A)
+    Semiperimeter = (side1 + side2 + side3) / 2
+    Area = (((Semiperimeter - side1) * (Semiperimeter - side2) * (Semiperimeter - side3)) * Semiperimeter)
+    Final_answer = sqrt(Area)
 
 
-    return (C)
+    return (Final_answer)
 
 
 
