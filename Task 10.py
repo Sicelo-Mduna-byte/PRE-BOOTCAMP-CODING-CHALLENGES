@@ -1,18 +1,13 @@
+def vowel_finder(string_entered_by_user):
 
-
-def vowel_finder(List):
-    '''
-    I create a for loop to iterate through my list, and check each elements of the list individually
-    I use an if() conditional statemnt in the loop iteration to compare each element with the vowels(a,e,i,o,u)
-    If theres a match i append my list with that vowel and print it
-    '''
-    List = []
-    List2 = []
-    List.extend(String)
-    for i in List:
+    list_containing_entire_string = []
+    list_containing_vowels_found_in_users_string = []
+    list_containing_entire_string.extend(string_entered_by_user)
+    for i in list_containing_entire_string:
         if (("a" == i) or ("a" == i) or ("e" == i) or ("i" == i) or ("o" == i) or ("u" == i)):
-            List2.append(i)
-    return List2
+            list_containing_vowels_found_in_users_string.append(i)
+    return list_containing_vowels_found_in_users_string
 
-String = "Hello World"
-print(vowel_finder(String))
+string_entered_by_user = "Hello World"
+print("The string:", string_entered_by_user)
+print("Contains the following vowels:", vowel_finder(string_entered_by_user))
