@@ -1,7 +1,7 @@
 def converter(number_that_has_to_be_converted):
-     hour = int(number_that_has_to_be_converted / 60)                          # the converted number in hours(integer)
+     hour = int(number_that_has_to_be_converted / 60)                          # converts the entered number into hours
      
-     minute = int(number_that_has_to_be_converted % 60)                        # the converted number in minutes(integer)
+     minute = int(number_that_has_to_be_converted % 60)                        # converts the entered number into minutes
      
      if(hour <= 1):
          current_hour =  (str(hour) + " hour")
