@@ -1,15 +1,10 @@
-def my_function(x,y):
-    """
-        function that takes 2 numbers as input. If either of the numbers is 65, OR if the sum of the numbers is
-        65 then return true. Otherwise return false.
+def sum_of_arguments_is_65_decider(first_number,second_number):
 
-    """
-    
-    if((x == 65 or y == 65) or ((x + y) == 65)):
+    if((first_number == 65 or second_number == 65) or ((first_number + second_number) == 65)):
 
         return True
     
     else:
         return False
 
-print(my_function(55,10))
+print(sum_of_arguments_is_65_decider(55,10))
