@@ -1,16 +1,21 @@
-def converter(number):
-    '''
-    The modulus operand will return the remainder after division which in this case is the minutes
-    The Division sign will return the hours as it will be rounded off to a whole number using the %d operand
-    '''
-    hour = int(number / 60) 
+def converter(number_that_has_to_be_converted):
+     hour = int(number_that_has_to_be_converted / 60)                          # the converted number in hours(integer)
+     
+     minute = int(number_that_has_to_be_converted % 60)                        # the converted number in minutes(integer)
+     
+     if(hour <= 1):
+         current_hour =  (str(hour) + " hour")
+    
+     elif(hour > 1):
+         current_hour =  (str(hour) + " hours")
+        
+     if(minute <= 1):
+         current_minute =  (str(minute) + " minute")
+         return current_hour, current_minute
+     elif(minute > 1):
+         current_minute = (str(minute) + " minutes")
+         return current_hour, current_minute
 
-    minute = int(number % 60)
-
-    if(hour <= 1):
-        return (str(hour) + "hour", str(minute) + "minutes")
-    else:
-        return (str(hour) + "hours", str(minute) + "minutes")
 
         
-print(converter(133))
+print(converter(125))
