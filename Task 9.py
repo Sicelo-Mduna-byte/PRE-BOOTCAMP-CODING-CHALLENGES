@@ -1,21 +1,18 @@
-Multiples_of_three = []
-Multiples_of_five = []
-
-
-
-for i in range(3, 1000, 3):
-    Multiples_of_three.append(i)
-x = (sum(Multiples_of_three))
+def sum_of_multiples_of_3_and_10_below_1000():
+    list_contaning_multiples_of_three = []
+    list_contaning_multiples_of_five = [] 
+    for i in range(3, 1000, 3):                                                                                                   
+        list_contaning_multiples_of_three.append(i)
+    sum_of_multiples_of_list_contaning_multiples_of_three = (sum(list_contaning_multiples_of_three))
     
-for i in range(5, 1000, 5):
-    '''
-    range(5, 1000) will give the sequence of numbers from 5 to 999 eg(5,6,6  ....999)
-    range(5,1000,5) display every fifth number starting from five eg( 5, 10, 15 ....)
-    '''
-    Multiples_of_five.append(i)
-y = (sum(Multiples_of_five))
-'''
-sum() is a built in standard function, that return the sum of a list
-'''
+    for i in range(5, 1000, 5):                                                                                                    
+       list_contaning_multiples_of_five.append(i)
+    sum_of_multiples_of_list_contaning_multiples_of_five = (sum(list_contaning_multiples_of_five))
+    
 
-print("The sum of all the multiples of 3 and 5 below 16 is: %d " % (x + y))
+
+
+    sum_of_multiples_of_3_and_10_below_1000 = sum_of_multiples_of_list_contaning_multiples_of_three + sum_of_multiples_of_list_contaning_multiples_of_five
+    return sum_of_multiples_of_3_and_10_below_1000
+
+print("The sum of all the multiples of 3 and 5 below 16 is: %d " % (sum_of_multiples_of_3_and_10_below_1000()))
