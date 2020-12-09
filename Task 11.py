@@ -1,21 +1,17 @@
-def comparison(String1, String2):
-    '''
-    I create a nested for loop, the inside loop runs to completion before the outer loop has a single iteration
-    hence im always comparing my inner loop(j) to my outer loop(i) hence i append my list with the outer loop(j)
-    '''
-    List1 = []
-    List1.extend(String1)
-    List2 = []
-    List2.extend(String2)
-    List3 = []
-    for i in List1:
-        for j in List2:
-            if((i == j) and (i != List3)):
-                List3.append(j)
+def find_characters_common_in_2_strings(string1, string2):
+    list_that_contains_string1_in_lowercase = []
+    list_that_contains_string1_in_lowercase.extend(string1.lower())
+    list_that_contains_string2_in_lowercase = []
+    list_that_contains_string2_in_lowercase.extend(string2.lower())
+    list_that_contains_the_similar_characters = []
+    for i in list_that_contains_string1_in_lowercase:
+        for j in list_that_contains_string2_in_lowercase:
+            if((i == j) and (i != list_that_contains_the_similar_characters)):
+                list_that_contains_the_similar_characters.append(j)
     
     
-    return(List3)
+    return(list_that_contains_the_similar_characters)
 
-String1 = "Sicelo"
-String2 = "Siaeno"
-print("The 2 Strings %s and %s, Have the following common characters " %(String1, String2), comparison(String1, String2))
+string1 = "Sicelo"
+string2 = "Siaeno"
+print("The 2 Strings %s and %s, Have the following common characters " %(string1, string2), (find_characters_common_in_2_strings(string1, string2)))
