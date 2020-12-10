@@ -12,4 +12,4 @@ def find_characters_common_in_2_strings(string1, string2):
 
 string1 = "Sicelo"
 string2 = "Siaeno"
-print("The 2 Strings %s and %s, Have the following common characters " %(string1, string2), (find_characters_common_in_2_strings(string1, string2)))
+print(find_characters_common_in_2_strings(string1, string2))
