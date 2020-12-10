@@ -1,16 +1,14 @@
 def find_characters_common_in_2_strings(string1, string2):
-    list_that_contains_string1_in_lowercase = []
-    list_that_contains_string1_in_lowercase.extend(string1.lower())
-    list_that_contains_string2_in_lowercase = []
-    list_that_contains_string2_in_lowercase.extend(string2.lower())
-    list_that_contains_the_similar_characters = []
-    for i in list_that_contains_string1_in_lowercase:
-        for j in list_that_contains_string2_in_lowercase:
-            if((i == j) and (i != list_that_contains_the_similar_characters)):
-                list_that_contains_the_similar_characters.append(j)
-    
-    
-    return(list_that_contains_the_similar_characters)
+    string1_in_lowercase = []
+    string1_in_lowercase.extend(string1.lower())
+    string_2_in_lowercase = []
+    string_2_in_lowercase.extend(string2.lower())
+    similar_char_list = []
+    for i in string1_in_lowercase:
+        for j in string_2_in_lowercase:
+            if((i == j) and (i != similar_char_list)):
+                similar_char_list.append(j)
+    return(similar_char_list)
 
 string1 = "Sicelo"
 string2 = "Siaeno"
