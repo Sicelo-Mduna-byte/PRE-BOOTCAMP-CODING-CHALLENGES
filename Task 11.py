@@ -8,8 +8,8 @@ def find_characters_common_in_2_strings(string1, string2):
         for j in string_2_in_lowercase:
             if((i == j) and (i != similar_char_list)):
                 similar_char_list.append(j)
-    return(similar_char_list)
+    return(", " .join(similar_char_list))
 
 string1 = "Sicelo"
 string2 = "Siaeno"
-print(find_characters_common_in_2_strings(string1, string2))
+print("common letters are", find_characters_common_in_2_strings(string1, string2))
