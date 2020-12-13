@@ -1,6 +1,11 @@
 def vowel_finder(string_entered_by_user):
-    vowels = "AaEeIiOoUu"
-    final_answer = [each for each in string_entered_by_user if each in vowels]
-    return final_answer
+    string_in_lowercase = []
+    string_in_lowercase.extend(string_entered_by_user.lower())
+    vowels = "aeiou"
+    similar_vowel_list = []
+    for i in string_in_lowercase:
+            if((i in vowels) and (i not in similar_vowel_list)):
+                    similar_vowel_list.append(i)
+    return(", " .join(similar_vowel_list))
 
-print(vowel_finder("Hello Egg"))
+print("The following vowels are contained in the string:",vowel_finder("Hello Egg"))
