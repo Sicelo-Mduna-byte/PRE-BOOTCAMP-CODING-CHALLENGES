@@ -10,6 +10,6 @@ def find_characters_common_in_2_strings(string1, string2):
                 similar_char_list.append(j)
     return(", " .join(similar_char_list))
 
-string1 = "Sicelo"
-string2 = "Siaeno"
-print("common letters are", find_characters_common_in_2_strings(string1, string2))
+string1 = "house"
+string2 = "computers"
+print("Common letters:", find_characters_common_in_2_strings(string1, string2))
