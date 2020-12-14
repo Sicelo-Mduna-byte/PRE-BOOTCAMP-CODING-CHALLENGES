@@ -6,6 +6,7 @@ def vowel_finder(string_entered_by_user):
     for i in string_in_lowercase:
             if((i in vowels) and (i not in similar_vowel_list)):
                     similar_vowel_list.append(i)
-    return(", " .join(similar_vowel_list))
+    vowels = (", " .join(similar_vowel_list))
+    print("The following vowels are contained in the string: %s" % (vowels))
 
-print("The following vowels are contained in the string:",vowel_finder("Hello Egg"))
+vowel_finder("Hello Egg")
