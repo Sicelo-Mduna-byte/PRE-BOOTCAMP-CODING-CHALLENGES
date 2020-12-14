@@ -11,6 +11,4 @@ def find_characters_common_in_2_strings(string1, string2):
     common_letters = (", " .join(similar_char_list))
     print("Common letters:", common_letters)
 
-string1 = "house"
-string2 = "computers"
-find_characters_common_in_2_strings(string1, string2)
+find_characters_common_in_2_strings("house", "computers")
